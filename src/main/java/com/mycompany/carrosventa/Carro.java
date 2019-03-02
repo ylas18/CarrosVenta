@@ -8,8 +8,10 @@ package com.mycompany.carrosventa;
 /**
  *
  * @author Yesid Avila
+ * @version 1.0
+ * Esta clase es una clase padre que almacena los datos comunes entre los diferentes tipos de carros
  */
-public class Carro {
+public abstract class Carro {
     
     /**
      * Variable que identifica cada carro de manera unica
@@ -43,4 +45,81 @@ public class Carro {
      * Variable que almacena el cilindraje de cada motor que tiene el carro
      */
     private int cilindraje;
+
+    public Carro(int codigo, String marca, String color, int modelo, int capacidadPasajeros, double precio, String combustuble, int cilindraje) {
+        this.codigo = codigo;
+        this.marca = marca;
+        this.color = color;
+        this.modelo = modelo;
+        this.capacidadPasajeros = capacidadPasajeros;
+        this.precio = precio;
+        this.combustuble = combustuble;
+        this.cilindraje = cilindraje;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(int modelo) {
+        this.modelo = modelo;
+    }
+
+    public int getCapacidadPasajeros() {
+        return capacidadPasajeros;
+    }
+
+    public void setCapacidadPasajeros(int capacidadPasajeros) {
+        this.capacidadPasajeros = capacidadPasajeros;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public String getCombustuble() {
+        return combustuble;
+    }
+
+    public void setCombustuble(String combustuble) {
+        this.combustuble = combustuble;
+    }
+
+    public int getCilindraje() {
+        return cilindraje;
+    }
+
+    public void setCilindraje(int cilindraje) {
+        this.cilindraje = cilindraje;
+    }
+    
+    
 }

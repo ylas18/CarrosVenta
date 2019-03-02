@@ -12,13 +12,11 @@ import javax.swing.JList;
  * @author Yesid Avila
  */
 public class Principal {
-    public Principal(){
     
-    JList listaNombres;
-    String nombres[] = { "Cristian", "Julian", "Milena"};
-    listaNombres = new JList( nombres );
-
-    
-    }
-    
+        public static void main(String[] args) {
+        Inicio inicio=new Inicio();
+        inicio.informacion();
+           
+        }
+   
 }
