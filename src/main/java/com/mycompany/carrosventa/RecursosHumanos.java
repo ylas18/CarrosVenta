@@ -5,6 +5,8 @@
  */
 package com.mycompany.carrosventa;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Yesid Avila
@@ -14,10 +16,13 @@ package com.mycompany.carrosventa;
 public class RecursosHumanos {
     
     public void mostrarClientes(){
-    
+        Inicio personas = new Inicio();
+        ArrayList<Persona>ListaPersona = personas.importaPersona();
         
-    
-    
+        for (Persona listaPersona : ListaPersona) {
+            
+            System.out.println("Codigo: "+listaPersona.getCedula()+" Nombre: "+listaPersona.getNombre());
+        }
     }
     
 }

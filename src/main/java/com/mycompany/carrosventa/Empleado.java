@@ -22,9 +22,7 @@ public class Empleado extends Persona{
      */
     private double salario;
 
-    public Empleado(double cedula, String nombre, String Direccion, double telefono, String sexo) {
-        super(cedula, nombre, Direccion, telefono, sexo);
-    }
+
 
     /**
      * Constructor que inicializa las variables de la clase Empleado
@@ -36,7 +34,7 @@ public class Empleado extends Persona{
      * @param telefono
      * @param sexo 
      */
-    public Empleado(int codigoEmpleado, double salario, double cedula, String nombre, String Direccion, double telefono, String sexo) {
+    public Empleado(double cedula, String nombre, String Direccion, double telefono, String sexo,int codigoEmpleado, double salario) {
         super(cedula, nombre, Direccion, telefono, sexo);
         this.codigoEmpleado = codigoEmpleado;
         this.salario = salario;

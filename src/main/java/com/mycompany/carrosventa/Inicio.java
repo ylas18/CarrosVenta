@@ -59,16 +59,13 @@ public class Inicio {
         venta1.getCarro().add(personalizado2);
         venta1.getCarro().add(john);
 
-        for (Persona listaPersona : listaPersonas) {
-            System.out.println("Nombre: "+listaPersona.getNombre()+", Codigo: "+listaPersona.getCedula());
-        
-        }
+
         return listaCarro;
     }
     
     
     
-    public ArrayList<Persona> importaPersna(){
+    public ArrayList<Persona> importaPersona(){
         
         Cliente cliente1 = new Cliente (1070984895 ,"Laura Gonzalez" , "Cra1A#14B-10", 2125337917 , "Femenino");
         Cliente cliente2 = new Cliente (1070970279,"Yesid Avila", "Calle15#16-15", 2125965896 , "Masculino" );
@@ -77,12 +74,12 @@ public class Inicio {
         Cliente cliente5 = new Cliente (21437552,"Miguel Pinzon", "Calle15#16-15", 225413698 , "Masculino");
         Cliente cliente6 = new Cliente (11256336,"Juanito Perez", "Calle15#16-15", 2125698523 , "Masculino" );
         
-        Empleado empleado1 = new Empleado (1070596325 ,"Ana Duarte" , "Cra8#6-10", 30021452 , "Femenino");
-        Empleado empleado2 = new Empleado (1070258963,"Mauricio Londoño", "Calle15#12-4", 325412563 , "Masculino" );
-        Empleado empleado3 = new Empleado (1258741236,"Alison Gonzalez", "Cra7#7-89", 321456254  , "Femenino");
-        Empleado empleado4 = new Empleado (1070589632,"Adriana Castellans", "Cra5#4-56", 326254125  , "Femenino");
-        Empleado empleado5 = new Empleado (35214785,"Jairo Sastoque", "Calle12#3-6", 312563254 , "Masculino");
-        Empleado empleado6 = new Empleado (36254128,"Andres Castellanos", "Calle15#16-15", 320125632 , "Masculino" );
+        Empleado empleado1 = new Empleado (1070596325 ,"Ana Duarte" , "Cra8#6-10", 30021452 , "Femenino",1,0);
+        Empleado empleado2 = new Empleado (1070258963,"Mauricio Londoño", "Calle15#12-4", 325412563 , "Masculino",2,0 );
+        Empleado empleado3 = new Empleado (1258741236,"Alison Gonzalez", "Cra7#7-89", 321456254  , "Femenino",3,0);
+        Empleado empleado4 = new Empleado (1070589632,"Adriana Castellans", "Cra5#4-56", 326254125  , "Femenino",4,0);
+        Empleado empleado5 = new Empleado (35214785,"Jairo Sastoque", "Calle12#3-6", 312563254 , "Masculino",5,0);
+        Empleado empleado6 = new Empleado (36254128,"Andres Castellanos", "Calle15#16-15", 320125632 , "Masculino",6,0 );
         
         listaPersonas.add(cliente1);
         listaPersonas.add(cliente2);
