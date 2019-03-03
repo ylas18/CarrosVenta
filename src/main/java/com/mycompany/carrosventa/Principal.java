@@ -21,7 +21,7 @@ public class Principal {
         inve.carroMasCaro();
         inve.carroMenosCaro();
         RecursosHumanos rc = new RecursosHumanos();
-        rc.mostrarClientes();
+        rc.mostrarPersonas();
            
         }
    

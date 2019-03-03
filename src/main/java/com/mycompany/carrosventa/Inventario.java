@@ -114,7 +114,7 @@ public class Inventario {
         ArrayList<Carro>ListaCarro = carros.importaCarro();
        
         for (Carro listaCarro : ListaCarro) {
-            System.out.println("Codigo: "+listaCarro.getPrecio()+" Marca: "+listaCarro.getMarca());
+            System.out.println("Codigo: "+listaCarro.getCodigo()+" Marca: "+listaCarro.getMarca());
         }
     }
 }

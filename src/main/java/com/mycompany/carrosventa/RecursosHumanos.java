@@ -14,13 +14,14 @@ import java.util.ArrayList;
  * Clase que maneja las personas que estan en el concesionario
  */
 public class RecursosHumanos {
-    
-    public void mostrarClientes(){
+    /**
+     * Metodo que muestra todos los clientes del concesionario
+     */
+    public void mostrarPersonas(){
         Inicio personas = new Inicio();
-        ArrayList<Persona>ListaPersona = personas.importaPersona();
+        ArrayList<Persona> ListaPersona = personas.importaPersona();
         
         for (Persona listaPersona : ListaPersona) {
-            
             System.out.println("Codigo: "+listaPersona.getCedula()+" Nombre: "+listaPersona.getNombre());
         }
     }
