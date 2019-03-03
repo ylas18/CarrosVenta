@@ -16,7 +16,7 @@ public class Inicio {
     ArrayList<Carro> listaCarro =new ArrayList<Carro>();
     ArrayList<Persona> listaPersonas =new ArrayList<Persona>();
     
-    public void informacion(){
+    public ArrayList<Carro> importaCarro(){
         
         Cliente cliente1 = new Cliente (1070984895 ,"Laura Gonzalez" , "Cra1A#14B-10", 2125337917 , "Femenino");
         Cliente cliente2 = new Cliente (1070970279,"Yesid Avila", "Calle15#16-15", 2125965896 , "Masculino" );
@@ -76,16 +76,14 @@ public class Inicio {
         
         
         
-        for (Carro listaCarro : listaCarro) {
-            System.out.println("Marca: "+listaCarro.getMarca()+", Codigo: "+listaCarro.getPrecio());
-        
-        }
+
         for (Persona listaPersona : listaPersonas) {
             System.out.println("Nombre: "+listaPersona.getNombre()+", Codigo: "+listaPersona.getCedula());
         
         }
-
-    }
+        return listaCarro;
+    }   
+    
 
     public ArrayList<Carro> getListaCarro() {
         return listaCarro;
@@ -93,6 +91,7 @@ public class Inicio {
     public ArrayList<Persona> getListaPersona() {
         return listaPersonas;
     }
+    
     
     
 }

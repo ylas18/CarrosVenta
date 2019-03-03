@@ -15,7 +15,11 @@ public class Principal {
     
         public static void main(String[] args) {
         Inicio inicio=new Inicio();
-        inicio.informacion();
+        inicio.importaCarro();
+        Inventario inve = new Inventario();
+        inve.mostrarCarros();
+        inve.carroMasCaro();
+        inve.carroMenosCaro();
            
         }
    
