@@ -15,6 +15,8 @@ public class Inicio {
     
     ArrayList<Carro> listaCarro =new ArrayList<Carro>();
     ArrayList<Persona> listaPersonas =new ArrayList<Persona>();
+    ArrayList<Venta> listaVenta =new ArrayList<Venta>();
+    ArrayList<Factura> listaFactura =new ArrayList<Factura>();
     
     public ArrayList<Carro> importaCarro(){
                  
@@ -47,8 +49,10 @@ public class Inicio {
         listaCarro.add(personalizado2);  
         listaCarro.add(personalizado3);  
         
+        Venta venta1 = new Venta (1, 1, 120000000, 2 );
         
-        
+        listaVenta.add(venta1);
+        venta1.getCarro().add(personalizado3);
 
         for (Persona listaPersona : listaPersonas) {
             System.out.println("Nombre: "+listaPersona.getNombre()+", Codigo: "+listaPersona.getCedula());

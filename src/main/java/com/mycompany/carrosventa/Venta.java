@@ -5,6 +5,8 @@
  */
 package com.mycompany.carrosventa;
 
+import java.util.ArrayList;
+
 /**
  *Esta clase contiene una lista de carros vendidos a un cliente 
  * @author Laura Gonzalez
@@ -32,21 +34,16 @@ public class Venta {
      * Esta variable contiene el codigo del empleado que realizo la venta 
      */
     private double empleado;
+ 
+    private ArrayList<Carro> carro = new ArrayList<Carro>();
 
-    
-    /**
-     * Este constructor inicializa la clase Venta 
-     * @param idVenta
-     * @param cantidad
-     * @param total
-     * @param empleado 
-     */
     public Venta(int idVenta, int cantidad, double total, double empleado) {
         this.idVenta = idVenta;
         this.cantidad = cantidad;
         this.total = total;
         this.empleado = empleado;
     }
+
 
     /**
      * Permite obtener el id de la venta 
@@ -111,6 +108,16 @@ public class Venta {
     public void setEmpleado(double empleado) {
         this.empleado = empleado;
     }
+
+    public ArrayList<Carro> getCarro() {
+        return carro;
+    }
+
+    public void setCarro(ArrayList<Carro> carro) {
+        this.carro = carro;
+    }
+    
+    
    
     
 }
