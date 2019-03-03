@@ -47,7 +47,7 @@ public class Inicio {
         listaCarro.add(hitachi);
         listaCarro.add(personalizado1);
         listaCarro.add(personalizado2);  
-        listaCarro.add(personalizado3);  
+        listaCarro.add(personalizado3); 
         
         Venta venta1 = new Venta (1, 1, 120000000, 2 );
         Venta venta2 = new Venta (2, 1, 15000000, 3 );

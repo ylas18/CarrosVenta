@@ -25,5 +25,4 @@ public class RecursosHumanos {
             System.out.println("Codigo: "+listaPersona.getCedula()+" Nombre: "+listaPersona.getNombre());
         }
     }
-    
 }
