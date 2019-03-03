@@ -51,10 +51,13 @@ public class Inicio {
         
         Venta venta1 = new Venta (1, 1, 120000000, 2 );
         Venta venta2 = new Venta (2, 1, 15000000, 3 );
+        Venta venta3 = new Venta (3, 1, 450000000, 3 );
         listaVenta.add(venta1);
         listaVenta.add(venta2);
+        listaVenta.add(venta3);
         venta1.getCarro().add(personalizado3);
         venta1.getCarro().add(personalizado2);
+        venta1.getCarro().add(john);
 
         for (Persona listaPersona : listaPersonas) {
             System.out.println("Nombre: "+listaPersona.getNombre()+", Codigo: "+listaPersona.getCedula());
