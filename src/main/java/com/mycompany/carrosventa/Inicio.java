@@ -50,9 +50,11 @@ public class Inicio {
         listaCarro.add(personalizado3);  
         
         Venta venta1 = new Venta (1, 1, 120000000, 2 );
-        
+        Venta venta2 = new Venta (2, 1, 15000000, 3 );
         listaVenta.add(venta1);
+        listaVenta.add(venta2);
         venta1.getCarro().add(personalizado3);
+        venta1.getCarro().add(personalizado2);
 
         for (Persona listaPersona : listaPersonas) {
             System.out.println("Nombre: "+listaPersona.getNombre()+", Codigo: "+listaPersona.getCedula());
